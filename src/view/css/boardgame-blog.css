@@ -1,0 +1,345 @@
+/* content */
+.row-fluid {
+    overflow: hidden;
+}
+
+body {
+    background-color: #EAF6F2;
+}
+
+.sidebar {
+    background: white;    
+    background-repeat: repeat;
+
+    max-width: 270px;
+    min-height: 600px;
+    display: block;
+    overflow: hidden;
+
+    margin-left:40px;
+    margin-bottom: -32768px;
+    padding-bottom: 32768px;
+}
+
+.sidebar_title {
+    width:  100%;
+    height: 40px;
+    block:  display;
+}
+
+.sidebar_title_wrapper{
+
+}
+
+.sidebar_title_a{
+    font-size: 24px;
+    color: white;
+    text-shadow:
+    3px 3px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+
+    line-height: 40px;
+    display : block;
+    padding: 0px 10px 0px 10px;
+    background: url("../img/titlebg300x100.jpg");
+}
+
+.sidebar_title_a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar_menu {
+    list-style:none;
+    margin: 0px;
+}
+
+.sidebar_menu_item {
+    margin: 0px 10px 25px 10px;
+    padding: 0.5em;
+    float: none;
+}
+
+.sidebar_menu_item > h4 {
+    color: #622010;
+    padding: 6px 0px 6px 0px;
+    font: 18px Lato;
+    text-transform: uppercase;
+    border-bottom: 1px solid #333333;
+}
+
+.sidebar_menu_item > p {
+    padding-top : 6px;
+}
+
+.sidebar_menu_item > ul {
+    padding-top : 6px;    
+}
+
+.sidebar_menu_item:first-child {
+    margin-top: 18px;
+}
+
+.sidebar_text {
+    margin-left: 2px;
+}
+
+.sidebar_menu_item > .profile > h4 {
+    color: #622010;
+    padding: 6px 0px 6px 0px;
+    font: 18px Lato;
+    text-transform: uppercase;
+    border-bottom : 1px solid #333333;
+}
+
+.profile{
+    height: 70px;
+}
+
+.profile-body {
+    padding-top : 6px;    
+}
+
+.profile img{
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-left: 0.5em;
+    margin-right:0.5em;
+}
+
+
+.content {
+    background: white;
+    height: auto;
+    margin-left:0px;
+    max-width: 640px;
+}
+
+.content > .navbar > .navbar-inner {
+    background-color : #34BB00;
+    background-image: -webkit-gradient(top, #34BB00, #34BB00);
+    background-image: -webkit-linear-gradient(top, #34BB00, #34BB00);
+    background-image: -moz-linear-gradient(top, #34BB00, #34BB00);
+    background-image: -ms-linear-gradient(top, #34BB00, #34BB00);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#34BB00), to(#34BB00));
+    background-image: -webkit-linear-gradient(top, #34BB00, #34BB00);
+    background-image: -o-linear-gradient(top, #34BB00, #34BB00);
+    background-image:linear-gradient(top, #34BB00, #34BB00);
+    background-repeat:repeat-x;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#34BB00', endColorstr='#34BB00', GradientType=0);
+}
+
+.navbar .nav > li > a {
+    color : white;
+    font-weight : bold;
+}
+
+.navbar .nav > li > a:hover{
+    color : black;
+    font-weight : bold;
+}
+
+.row-fluid .content {
+    width: 100%;
+}
+
+article {
+    padding: 10px 10px 10px 15px;
+}
+
+article ul{
+    margin: 0px 0px 0px 0px;
+}
+
+/* section */
+.SECTION {
+    height: auto;
+    display: block;
+    list-style: none;
+    overflow: hidden;
+
+    /* shadowimg */
+    -moz-box-shadow:    rgba(0, 0, 0, 0) 0px 0px 8px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0) 0px 0px 8px;
+    box-shadow:         rgba(0, 0, 0, 0) 0px 0px 8px;
+}
+
+.SECTION:last-child {
+    padding-bottom: 3.5em;
+    border-bottom: thin solid #BBB;
+}
+
+.SECTION header{
+    background: white;
+    padding-left: 0.5em;
+    border-bottom: 0px;
+    margin-bottom: 4px;
+    overflow: hidden;
+}
+
+.ITEM-DATE {
+    display: block;
+    font-size: 90%;
+    color: #659700;
+    margin-bottom:0;
+    border-bottom:thin solid grey;
+}
+
+.ITEM-TITLE {
+    margin-bottom: 0;
+    float:left;
+}
+
+.item-title-tag {
+    font-size:10.998px;
+    font-weight:bold;
+    line-height:14px;
+    color:#ffffff;
+    vertical-align:baseline;
+    white-space:nowrap;
+    text-shadow:0 -1px 0 rgba(0, 0, 0, 0.25);
+
+    float:left;
+    margin-top: 10px;
+    margin-left: 1em;
+    padding:1px 4px 2px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+}
+
+.ITEM-TEXT {
+    padding-left: 0.5em;
+    background: white;
+    display: block;
+    clear:left;
+}
+
+.ITEM-TEXT p {
+    margin: 0px;
+}
+
+.ITEM-TEXT h3 {
+    margin: 0 0 5px 0;
+    padding: 0px 10px;
+    border-width: 0 0 0 6px;
+    border-color: #7EBA03;
+    border-style: solid;
+}
+
+.ITEM-SUMMARY {
+    margin: 0px 10px 0px 10px;
+}
+
+.ITEM-SUMMARY-PHOTO {
+    float: left;
+
+    background: #eee;
+    width: 195px;
+    height: 100px;
+    padding: 5px 5px 5px 5px;
+    border: 1px solid #CCC;
+
+    margin: 5px 15px 10px 0px;
+}
+
+.ITEM-SUMMARY-TEXT {
+    padding-top: 10px;
+}
+
+.photos {
+    padding: 5px 5px 5px 5px;
+    border: 1px solid #CCC;
+    background: #eee;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+/* trimming image (16:9) */
+.trim-frame {
+    overflow: hidden;
+    max-width: 640px;
+    max-height: 360px;
+}
+.trim-frame > .photo {
+    margin-top: -60px;
+}
+
+.photo { }
+
+/* next item aria */
+.NEXT-ITEMS {
+    margin-top: 10px;
+    overflow: hidden;
+
+    padding-left: 6px;
+    padding-right: 6px;
+
+    padding-bottom: 1em;
+    border-bottom: thin solid;
+    border-color:#BBB;
+}
+
+.NEXT-ITEM-LABEL {
+    color: #E47911;
+    padding-bottom: 2px;
+}
+
+.NEXT-ITEM-LIST {
+    margin-top: 4px;
+    list-style: none;
+}
+
+.NEXT-ITEM {
+    width: 22%;
+    padding: 2px 8px 2px 8px;
+    float: left;
+}
+
+.NEXT-ITEM-PHOTO {
+    background: #eee;
+    padding: 1px 1px 1px 1px;
+    border: 1px solid #CCC;
+}
+
+.page-link {
+   margin: 0.5em;
+   both: clear;
+}
+
+.page-previous-link {
+    margin: 1em;
+    float: left;
+}
+
+.page-next-link {
+    margin: 1em;
+    float: right;
+}
+
+footer {
+    max-width: 910px;
+    height: 30px;
+
+    overflow: hidden;
+    text-align: center;
+
+    background-color: #622010;
+}
+
+.footer-content {
+    margin-top: 0.5em;
+}
+
+.goto-top {
+    color : white;
+    font-weight : bold;
+}
+
+.goto-top:hover {
+    color : black;
+}

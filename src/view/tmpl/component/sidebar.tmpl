@@ -1,0 +1,17 @@
+(:ul :class "sidebar_menu"
+     (:li :class "sidebar_menu_item about"
+	  (:h4 "About")
+	  (:p :class "sidebar_text" "遊んだボードゲームの感想を書いてます"))
+     (:li :class "sidebar_menu_item"
+	  (:div :class "profile"
+		(:h4 "Profile")
+		(:div :class "profile-body"
+		      (:img :src "./img/mnmbg-icon.jpg")
+		      (:a :href "https://twitter.com/mnmbg"  "Twitter : mnmbg")
+		      (:p :class "sidebar_text" "ボードゲームしましょう"))))
+     (:li :class "sidebar_menu_item"
+	  (:h4 "最近のエントリ"))
+;	  #,(make-recent-boardgame-entry-links))
+     (:li :class "sidebar_menu_item"
+	  (:img :src "./img/feed-icon-14x14.png" :style "margin-right: 2px")
+	  (:a :href  "http://doyoulisp.org/boardgame/feed" "RSS feed")))

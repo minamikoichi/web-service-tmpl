@@ -1,0 +1,40 @@
+@media (max-width: 978px) {
+    .container-fluid {
+	width: 96%;
+	padding-right: 0px;
+	padding-left: 0px;
+	margin: 0 auto; 
+    }
+    
+    .row-fluid .sidebar {
+	display:none;
+    }
+
+    .row-fluid .content {
+	width: 100%;
+	max-width: 640px;
+    }
+
+    .titlebar {
+	background: url("../img/titlebg300x100.jpg");
+	block :display;
+	width: 200px;
+	font-size: 24px;
+	line-height: 36px;
+	color: white;
+	text-shadow:
+	3px 3px 0 #000,
+	-1px -1px 0 #000,
+	1px -1px 0 #000,
+	-1px 1px 0 #000,
+	1px 1px 0 #000;
+    }
+
+    article {
+	padding: 0px 0px 0px 0px;
+    }
+
+    h2 {
+	font-size : 1.5em;
+    }
+}
