@@ -3,8 +3,8 @@
        (:title :data-bind "text: title" nil)
        (:meta :charset "utf-8")
        (:meta :name "viewport" :content "width=device-width, initial-scale=1.0")
-       (:link :rel "stylesheet" :href "./css/boardgame.dep.css")
-       (:link :rel "stylesheet" :href "./css/boardgame.css"))
+       (:link :rel "stylesheet" :href "/boardgame/css/boardgame.dep.css")
+       (:link :rel "stylesheet" :href "/boardgame/css/boardgame.css"))
    (:body
        (:div :class "container-fluid"
 	     (:div :class "row-fluid"
@@ -13,8 +13,11 @@
 			 #@|component/sidebar.tmpl|)
 		   (:div :class "span7 content"
 			 #@|component/content-header.tmpl|
-			 (:article nil))
-		   #@|component/common-footer.tmpl|
-		   )
-       (:script :src "./js/boardgame.dep.min.js" :type "text/javascript" nil)
-       (:script :src "./js/boardgame.js" :type "text/javascript" nil))))
+			 (:article :data-bind "template: { name : articleType }")))
+	     #@|component/common-footer.tmpl|
+	     )
+       (:script :src "/boardgame/js/boardgame.dep.min.js" :type "text/javascript" nil)
+       (:script :src "/boardgame/js/boardgame.js" :type "text/javascript" nil)
+       #@|component/blog-item-summary.tmpl|
+       #@|component/blog-item.tmpl|
+       ))

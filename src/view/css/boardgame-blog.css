@@ -149,6 +149,8 @@ body {
 
 article {
     padding: 10px 10px 10px 15px;
+    background :white;
+    min-height :480px;
 }
 
 article ul{
@@ -166,11 +168,6 @@ article ul{
     -moz-box-shadow:    rgba(0, 0, 0, 0) 0px 0px 8px;
     -webkit-box-shadow: rgba(0, 0, 0, 0) 0px 0px 8px;
     box-shadow:         rgba(0, 0, 0, 0) 0px 0px 8px;
-}
-
-.SECTION:last-child {
-    padding-bottom: 3.5em;
-    border-bottom: thin solid #BBB;
 }
 
 .SECTION header{
@@ -273,9 +270,12 @@ article ul{
 
 /* next item aria */
 .NEXT-ITEMS {
-    margin-top: 10px;
+    margin-top: 3.5em;
     overflow: hidden;
 
+    border-top: thin solid #BBB;
+
+    padding-top: 1em;
     padding-left: 6px;
     padding-right: 6px;
 

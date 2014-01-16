@@ -1,0 +1,11 @@
+(:script :type "text/html" :id "blog-item-summary"
+   (:ul :data-bind "foreach: article"
+      (:li :class :section 
+	   (:header 
+	    (:h4 :class :item-date :data-bind "text: date")
+	    (:h2 :class :item-title :data-bind "text: title"))
+	   (:div :class :item-summary :data-bind "attr: {'id' : id}"
+		 (:img :class :item-summary-photo :data-bind "attr: {'src' : thumbnail}"
+		       (:p :class :item-summary-text :data-bind "text: firstline" nil)
+		       #,(transition-link :class "btn-link" :data-bind "attr: {'href' : '/boardgame/view/id/' + id + '/'} , click: function(data, event) { $parent.itemLinkClick(id,data,event) }" "続きを読む → "))))
+      ))

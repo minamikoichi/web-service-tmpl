@@ -7,7 +7,7 @@ npm install -g grunt-cli
 make -f build
 
 * deploy
-manual...
+ rsync -av dist/ $TARGET
 
 ** nginx-install-memo
 sudo -s

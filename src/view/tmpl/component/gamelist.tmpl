@@ -1,0 +1,22 @@
+(:html :lang "ja"
+       (:head
+	(:title "Gamelist")
+	(:meta :charset "utf-8")
+	(raw (make-common-head-string request))
+	(:link :rel "stylesheet" :href (raw (make-public-path-string request "css/boardgame-blog.css")))
+	(:link :rel "stylesheet" :href (raw (make-public-path-string request "css/responsive-boardgame-blog.css")))
+	(:link :rel "stylesheet" :href (raw (make-public-path-string request "css/boardgame-label.css")))
+	(:link :rel "stylesheet" :href (raw (make-public-path-string request "css/boardgame-gamelist-onepage.css"))))
+       (:body 
+	(:div :class "container"
+	      (:div :class "row"
+		    (:div :class "span3 sidebar" 
+			 (:a :class "sidebar_title_a" :href #,(make-path-string "boardgame/") "日曜ボードゲーム")
+			 #@|sidebar|)
+		    (:div :class "span7 content"
+			 #@|content-header|
+			 (raw (funcall make-article-func)))))
+	(raw (make-footer-string request))
+					; javascript
+	(:script :src (make-public-path-string request "js/lib/jquery.min.js") :type "text/javascript" nil)
+	(:script :src (raw (make-public-path-string request "js/boardgame.js")) :type "text/javascript" nil))))
